@@ -1,0 +1,9 @@
+{
+    "canopy": {
+        "serverUrl": "http://company.server.com/CanopyWebService.svc/",
+        "consumerKey": "your_key",
+        "consumerSecret": "your_secret",
+        "accessToken": "your_token",
+        "tokenSecret": "your_token_secret"
+    }
+}
