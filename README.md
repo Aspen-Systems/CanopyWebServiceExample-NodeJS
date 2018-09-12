@@ -6,7 +6,14 @@ This project is a simple example of how to communicate with Canopy Web Services 
 
 Install [git](https://git-scm.com/).
 
-Make sure you have `nodejs >= v10.x` and `npm >= v6.x` installed on your machine. For convenience, we recommend you use [NVM](https://github.com/creationix/nvm) to install the required versions of `node` and `npm` (If you are on Windows, use [this](https://github.com/coreybutler/nvm-windows) version of NVM).
+Make sure you have `nodejs >= v10.x` and `npm >= v6.x` installed on your machine. For convenience, we recommend you use NVM to install the required versions of `node` and `npm`. For Windows users you can get NVM [here](https://github.com/coreybutler/nvm-windows). For other operating systems you download NVM from [here](https://github.com/creationix/nvm).
+
+### Installation with NVM
+
+When you use NVM to install `node` and `npm` you must first install NVM, then from your terminal or powershell run:
+
+`nvm install 10.10.0` to install version 10.10.0 of `node` and its relevant `npm` version as well.
+`nvm use 10.10.0` to use the version of `node` that you installed.
 
 ## Setup
 
