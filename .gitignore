@@ -72,5 +72,11 @@ typings/
 # Serverless directories
 .serverless
 
+# next.js build output
+.next
+
+# Ignore the user-defined config
 **/config.json
+
+# Ignore any vscode artifacts
 .vscode
