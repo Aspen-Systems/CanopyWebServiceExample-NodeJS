@@ -8,6 +8,8 @@ Install [git](https://git-scm.com/).
 
 Make sure you have `nodejs >= v10.x` and `npm >= v6.x` installed on your machine. For convenience, we recommend you use NVM to install the required versions of `node` and `npm`. For Windows users you can get NVM [here](https://github.com/coreybutler/nvm-windows). For other operating systems you download NVM from [here](https://github.com/creationix/nvm).
 
+If you do not want to use NVM, you can install the `Current` version of nodejs manually from [here](https://nodejs.org/en/).
+
 ### Installation with NVM
 
 When you use NVM to install `node` and `npm` you must first install NVM, then from your terminal or powershell run:
