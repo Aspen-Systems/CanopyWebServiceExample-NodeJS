@@ -71,7 +71,6 @@ const generateSignature = (_url, httpMethod, timestamp, nonce) => {
 };
 
 const appendSignatureToUrl = (url, httpMethod) => {
-  // This is not a good way to calculate nonce
   const nonce = Math.floor(Math.random() * 10000000) + 1;
   const timestamp = Math.floor(new Date().getTime() / 1000);
 
@@ -83,9 +82,4 @@ const appendSignatureToUrl = (url, httpMethod) => {
   return urlBase.toString();
 }
 
-module.exports = {
-  appendSignatureToUrl,
-  buildSignatureQueryParams,
-  generateSignature,
-  OAUTH_KEYS
-};
+module.exports = appendSignatureToUrl;

@@ -6,3 +6,44 @@ body {
 a {
   color: #00B7FF;
 }
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: thin solid #8a8a8a;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #282828;
+  padding: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-group label {
+  text-align: right;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.form-group input {
+  margin-left: 5px;
+}
+
+.submit-button {
+  width: 100px;
+  border-radius: 4px;
+  height: 40px;
+  border: none;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: #282828;
+  color: white;
+  cursor: pointer;
+}

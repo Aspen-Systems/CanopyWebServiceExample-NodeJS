@@ -2,34 +2,39 @@ const axios = require('axios');
 const express = require('express');
 const router = express.Router();
 
-const oauth = require('../oauth');
+const oauthUrl = require('../oauth');
 const config = require('../config/config.json').canopy;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function(req, res) {
+  res.render('index', { title: 'Order Delivery Status' , order: req.query.order });
 });
 
-router.get('/test', async (req, res, next) => {
-  const url = oauth.appendSignatureToUrl(`${config.serverUrl}ModifyOrder`, 'POST');
+router.post('/updatedelivery', async (req, res) => {
+  const url = oauthUrl(`${config.serverUrl}ModifyOrder`, 'POST');
+  const {
+    ordernumber,
+    delivered
+  } = req.body;
+
   const orderInfo = [
     {
-      orderNumber: 13872,
+      orderNumber: ordernumber,
       headerFields: [
         {
           fieldName: "DeliveryFlag",
-          value: "2"
+          value: (delivered === "on" ? 1 : 0) + ""
         }
       ]
     }
   ];
-  const response = await axios({
+  await axios({
     url,
     method: 'POST',
     headers: { 'Content-Type': 'text/xml' },
     data: orderInfo
   });
-  res.send('You did it: ' + response.data);
+  res.redirect('/?order=' + ordernumber);
 });
 
 module.exports = router;
