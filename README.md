@@ -12,9 +12,11 @@ Make sure you have `nodejs >= v10.x` and `npm >= v6.x` installed on your machine
 
 When you have everything you need installed, perform the following in your terminal or powershell window:
 
-`git clone https://github.com/Aspen-Systems/CanopyWebServiceExample-NodeJS.git` or if you use ssh `git clone git@github.com:Aspen-Systems/CanopyWebServiceExample-NodeJS.git`  
-`cd CanopyWebServiceExample-NodeJS`  
-`npm install`  
+```
+git clone https://github.com/Aspen-Systems/CanopyWebServiceExample-NodeJS.git or if you use ssh git clone git@github.com:Aspen-Systems/CanopyWebServiceExample-NodeJS.git
+cd CanopyWebServiceExample-NodeJS
+npm install
+```
 
 This should leave you with a built project. You will need a valid config to communicate with Canopy Web Services. Copy the `example.config.json` file in the `config` folder and create a new file named `config.json`. Fill in the necessary details from your Canopy Web Service Company information.
 
