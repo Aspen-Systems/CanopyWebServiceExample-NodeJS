@@ -13,7 +13,7 @@ Make sure you have `nodejs >= v10.x` and `npm >= v6.x` installed on your machine
 When you have everything you need installed, perform the following in your terminal or powershell window:
 
 ```
-git clone https://github.com/Aspen-Systems/CanopyWebServiceExample-NodeJS.git or if you use ssh git clone git@github.com:Aspen-Systems/CanopyWebServiceExample-NodeJS.git
+git clone https://github.com/Aspen-Systems/CanopyWebServiceExample-NodeJS.git
 cd CanopyWebServiceExample-NodeJS
 npm install
 ```
